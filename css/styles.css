@@ -134,6 +134,7 @@ button {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color var(--transition-duration) var(--cubic-bezier);
 
 }
 
@@ -207,6 +208,7 @@ button {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
+        transition: color var(--transition-duration) var(--cubic-bezier);
 }
 
 .header-mail:hover,
@@ -268,6 +270,7 @@ button {
         width: 216px;
         height: 50px;
         border: none;
+        transition: background var(--transition-duration) var(--cubic-bezier);
 }
 
 .top-btn:hover,
@@ -449,6 +452,7 @@ button {
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF;
+    transition: background-color var(--transition-duration) var(--cubic-bezier), fill var(--transition-duration) var(--cubic-bezier);
 }
 
 .social-list-link:hover,
@@ -488,6 +492,7 @@ button {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: var(--primery-border-color);
+    transition: color var(--transition-duration) var(--cubic-bezier), border var(--transition-duration) var(--cubic-bezier);
 }
 
 .clients-list-link:hover,
@@ -541,6 +546,7 @@ address {
     font-weight: 400;
     line-height: 1.71;
     color: var(--primary-light-color-text);
+    transition: color var(--transition-duration) var(--cubic-bezier);
 }
 
 .link-address-mail,
@@ -548,6 +554,7 @@ address {
         font-weight: 400;
         line-height: 1.71;
         color: rgba(255, 255, 255, 0.6);
+        transition: color var(--transition-duration) var(--cubic-bezier);
 }
 
 .link-address-map:hover,
@@ -603,6 +610,7 @@ address {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration) var(--cubic-bezier);
 }
 
 .link-icon-list:hover,
@@ -640,6 +648,7 @@ address {
         padding: 6px 22px;
         border-radius: 4px;
         border: none;
+        transition: background var(--transition-duration) var(--cubic-bezier), color var(--transition-duration) var(--cubic-bezier), box-shadow var(--transition-duration) var(--cubic-bezier);
 }
 
 .btn-filter:hover,
@@ -664,6 +673,7 @@ address {
 
 .link-portfolio {
     display: block;
+    transform: box-shadow var(--transition-duration) var(--cubic-bezier);
 }
 
 .link-portfolio:hover,
@@ -729,7 +739,7 @@ address {
     transition: opacity var(--transition-duration) var(--cubic-bezier), visibility var(--transition-duration) var(--cubic-bezier);
 }
 
-..backdrop.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
